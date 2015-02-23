@@ -11,11 +11,11 @@
           <div class="container">
             <div class="col-md-10 col-md-offset-1 text-center">
               <h1>Learn what coding bootcamp is perfect for your future</h1>
-              <h2>7 questions in 3 minutes</h2>
+              <!-- <h2>7 questions in 3 minutes</h2> -->
             </div>
             <div class="clearfix"></div>
             <div class="col-md-4 col-md-offset-4">
-              <a id="start" class="btn btn-lg btn-block start">Get Started!</a>
+              <a id="start" class="btn btn-lg btn-block start">Begin</a>
             </div>
           </div>
         </section>

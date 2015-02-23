@@ -8,8 +8,9 @@
         <title>Bootcamp Genie - Find the best Coding School for You</title>
         <meta name="description" content="Find the right Coding School for you">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <!-- FAVORITE ICON -->
         <link rel="shortcut icon" href="favicon.ico">
+        <!-- FONT AWESOME ICONS -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,7 +19,10 @@
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" href="css/animate.css">
+        <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="css/main.css">
+        <!-- jQuery UI STYLESHEET -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>

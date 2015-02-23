@@ -44,34 +44,34 @@
 
             	<!-- BOOTCAMPS THAT WILL FIT YOU -->
             	<div id="bootcamps">
-            		<h2>These Bootcamps would be a great fit</h2>
-            		<div class="col-md-4">
+            		<h2>This Bootcamp would be a great fit</h2>
+            		<!-- <div class="col-md-4" id="box0">
             			<a href="#">
                             <div class="bootcamp-box border_right">                         
-                				<h3>Dev Bootcamp</h3>
-                				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                				<h3></h3>
+                				<p></p>
                                 <button class="btn">Find Out More</button>
                 			</div>
                         </a>
-            		</div>
-            		<div class="col-md-4">
+            		</div> -->
+            		<div class="col-md-4 col-md-offset-4" id="box1">
                         <a href="#">
                             <div class="bootcamp-box">
-                				<h3>Start-up Institue</h3>
-                				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                				<h3></h3>
+                				<p></p>
                                 <button class="btn">Find Out More</button>
                             </div>
                         </a>
             		</div>
-            		<div class="col-md-4">
+            		<!-- <div class="col-md-4" id="box2">
                         <a href="#">
                             <div class="bootcamp-box border_left">
-                				<h3>Codify Academy</h3>
-                				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                				<h3></h3>
+                				<p></p>
                                 <button class="btn">Find Out More</button>
                 			</div>
                         </a>
-            		</div>
+            		</div> -->
             	</div>
             </div>  
         </section>

@@ -1,5 +1,7 @@
         <!-- JQUERY LIBRARY -->
       <script src="js/vendor/jquery-1.11.0.min.js"></script>
+      <!-- jQuery UI -->
+      <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
       <!-- BOOTSTRAP JS -->
       <script src="js/vendor/bootstrap.min.js"></script>
       <!-- CUSTOM JS -->
