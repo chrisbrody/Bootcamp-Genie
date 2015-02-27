@@ -16,13 +16,13 @@ if (localStorage) {
 		localStorage.clear();
 
 		// get input values for questions
-	    var city = document.getElementById("q1").value;
-	    var devType = document.getElementById("q2").value;
-	    var timeCommit = document.getElementById("q3").value;
-	    var environment = document.getElementById("q4").value;
-	    var bankroll = document.getElementById("q5").value;
-	    var codingLevel = document.getElementById("q6").value;
-	    var gender = document.getElementById("q7").value;
+	    var city = $("#q1").val();
+	    var devType = $("input[name=q2]:checked").val();
+	    var timeCommit = $("input[name=q3]:checked").val();
+	    var environment = $("input[name=q4]:checked").val();
+	    var bankroll = $("input[name=q5]:checked").val();
+	    var codingLevel = $("input[name=q6]:checked").val();
+	    var gender = $("input[name=q7]:checked").val();
 
 	    // object to store local host data
 	    var entry = {
@@ -48,6 +48,7 @@ if (localStorage) {
 		console.log('hey');
 		// hide intro
 		$('#main').hide();
+		$('#quotes').hide();
 
 		// change background image
 		$('body').toggleClass('bg1');
@@ -76,27 +77,6 @@ $(function() {
 	var q1Tags = ['Akron','Atlanta','Austin','Boston','Boulder','Chicago','Dallas','Denver','Houston','Kansas City',
 		'Las Vegas','Los Angeles','Louisville','Miami','Nashville','New York','Philadelphia','Portland','Salt Lake City','San Francisco','San Diego','Seattle','Washington, DC'];
 	$('#q1').autocomplete({	source: q1Tags });
-	// // QUESTION 2 - Developer Type
-	// var q2Tags = ['Back End','Front End','Undecided'];	
-	// $('#q2').autocomplete({	source: q2Tags });
-	// // QUESTION 3 - Time Commitment
-	// var q3Tags = ['10','20','30','40','50','60'];	
-	// $('#q3').autocomplete({	source: q3Tags });
-	// // QUESTION 4 - Learning Environment
-	// var q4Tags = ['Online','In Person','Hybrid - (Flipped Class)'];	
-	// $('#q4').autocomplete({	source: q4Tags });
-	// // QUESTION 5 - Budget
-	// var q5Tags = ['1000','2000','3000','4000','5000','6000','7000','8000','9000','10000','11000','12000','13000','14000','15000','16000','17000','18000','19000','20000'];	
-	// $('#q5').autocomplete({	source: q5Tags });
-	// // QUESTION 6 - Coding Level
-	// var q6Tags = ['Beginner','Intermediate','Advanced'];	
-	// $('#q6').autocomplete({	source: q6Tags });
-	// // QUESTION 7 - Gender
-	// var q7Tags = ['Female','Male','It is a secret'];	
-	// $('#q7').autocomplete({	source: q7Tags });
-
-
-
 });
 
 
@@ -137,7 +117,7 @@ var sch00 = new school(
 
 var sch01 = new school(
 	'Codify Academy', 
-	'Boston', 
+	'San Francisco', 
 	'Front End', 
 	'10', 
 	'Hybrid - (Flipped Class)', 
@@ -150,7 +130,7 @@ var sch01 = new school(
 
 var sch04 = new school(
 	'Start-up Institute', 
-	'Boston', 
+	'San Francisco', 
 	'Front End', 
 	'10', 
 	'Hybrid - (Flipped Class)', 
@@ -198,13 +178,20 @@ console.log( schools );
 
 // SEARCH THROUGH SCHOOL OBJECTS
 schools = jQuery.grep(schools, function (school) {
-	return ( school.city === entryDate.city && school.devType === entryDate.devType && school.timeCommit === entryDate.timeCommit && school.environment === entryDate.environment && school.bankroll === entryDate.bankroll && school.codingLevel === entryDate.codingLevel && school.gender === entryDate.gender );
+	return ( school.city === entryDate.city );
 	
 });
-
+console.log( schools );
 // RETURN THE TOP SCHOOL MATCH
 $( "#box1 a" ).attr( "href", schools[0].hrefer );
 $( "#box1 h3" ).text( schools[0].bootcamp );
 $( "#box1 p" ).text( schools[0].descriptions );
 
 
+
+$("#fakeloader").fakeLoader({
+	timeToHide:3200, //Time in milliseconds for fakeLoader disappear
+	zIndex:"9999",//Default zIndex
+	spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+	bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+});

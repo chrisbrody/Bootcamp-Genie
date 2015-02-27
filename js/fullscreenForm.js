@@ -271,6 +271,7 @@
 
 			var nextField = this.fields[ this.current ];
 			classie.add( nextField, 'fs-current' );
+			$(window).scrollTop(0);
 			classie.add( nextField, 'fs-show' );
 		}
 
