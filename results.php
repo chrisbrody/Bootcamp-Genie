@@ -9,70 +9,70 @@
         <section id="last_step">
             <!-- RESET & QUESTION COUNTER -->
             <div class="counter">
-              <a href="index.php" class="pull-left">Restart</a>
-              <h2 class="pull-right hidden-xs">COMPLETE!</h2>
+              <a href="index.php" class="pull-left">Start Over</a>
             </div>
             <div class="container finish">
 
-            	<!-- CTA POINTS / EMAIL / SUBMIT BUTTON -->
-                <h1>Call to Action Getting Started Kit</h1>
-            	<div class="col-md-1 col-md-offset-1">
-                    <i class="fa fa-arrow-right fa-4x hidden-xs"></i>
-            	</div>
-            	<div class="col-md-8 col-md-offset-1">
-	                <form class="cta">
-		                <div class="row">
-			                <ul>
-			                  <li>Point 1</li>
-			                  <li>Point 2</li>
-			                  <li>Point 3</li>
-			                </ul>
-		                </div> 
-		                <div class="row">
-		                  <div class="col-md-5">
-		                    <input type="text" class="form-control" placeholder="Email" autofocus>
-		                  </div>
-		                  <div class="col-md-3 finishDiv" style="">
-		                    <a href="#" class="finish">Submit</a>
-		                  </div>
-		                </div>
-	                </form>
-            	</div>
-
-            	<div class="clearfix"></div>
-            	<hr>
-
             	<!-- BOOTCAMPS THAT WILL FIT YOU -->
-            	<div id="bootcamps">
-            		<h2>This Bootcamp would be a great fit</h2>
-            		<!-- <div class="col-md-4" id="box0">
-            			<a href="#">
+                <div id="bootcamps">
+                    <h1>These Bootcamps would be a great fit</h1>
+
+                    <br>
+
+                    <div class="col-md-4" id="box0">
+                        <a href="#" target="_blank">
                             <div class="bootcamp-box border_right">                         
-                				<h3></h3>
-                				<p></p>
-                                <button class="btn">Find Out More</button>
-                			</div>
-                        </a>
-            		</div> -->
-            		<div class="col-md-4 col-md-offset-4" id="box1">
-                        <a href="#">
-                            <div class="bootcamp-box">
-                				<h3></h3>
-                				<p></p>
+                                <h3></h3>
+                                <p></p>
                                 <button class="btn">Find Out More</button>
                             </div>
                         </a>
-            		</div>
-            		<!-- <div class="col-md-4" id="box2">
-                        <a href="#">
-                            <div class="bootcamp-box border_left">
-                				<h3></h3>
-                				<p></p>
+                    </div>
+                    <div class="col-md-4" id="box1">
+                        <a href="#" target="_blank">
+                            <div class="bootcamp-box">
+                                <h3></h3>
+                                <p></p>
                                 <button class="btn">Find Out More</button>
-                			</div>
+                            </div>
                         </a>
-            		</div> -->
-            	</div>
+                    </div>
+                    <div class="col-md-4" id="box2">
+                        <a href="#" target="_blank">
+                            <div class="bootcamp-box border_left">
+                                <h3></h3>
+                                <p></p>
+                                <button class="btn">Find Out More</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            	<div class="clearfix"></div>
+
+            	<hr>
+
+                <!-- CTA POINTS / EMAIL / SUBMIT BUTTON -->
+                <h2 class="text-center">Top 5 things you need to begin Coding</h2>
+                <div class="col-md-1 col-md-offset-2">
+                    <i class="fa fa-arrow-right fa-4x hidden-xs"></i>
+                </div>
+                <div class="col-md-6">
+                    <form id="emailValidate" method="get">
+                        <input type="email" placeholder="youremail@xyz.com" class="form-control" id="userEmail" required>
+                        <button id="emailInput" onclick="continueOrNot()">DOWNLOAD NOW</button>
+                    </form>
+                    <!-- <div id="mc_embed_signup">
+                        <form action="//codifyacademy.us8.list-manage.com/subscribe/post?u=cb91841652f1b871590545a01&amp;id=37cffa7bea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate cta" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL" class="sr-only">Subscribe to our mailing list</label>
+                            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_cb91841652f1b871590545a01_37cffa7bea" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="DOWNLOAD" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
             </div>  
         </section>
 

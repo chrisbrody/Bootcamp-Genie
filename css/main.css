@@ -1,6 +1,142 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'codropsicons';
+  src:url('../fonts/codropsicons/codropsicons.eot');
+  src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+    url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html, body, .container {
+  height: 100%;
+}
+
+body {
+  background: #808388;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Raleway', Arial, sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  min-height: 590px;
+}
+
+a {
+  color: rgba(0,0,0,0.3);
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover, a:focus {
+  color: #fff;
+}
+
+/* Top Navigation Style */
+.codrops-top {
+  margin-top: 1em;
+}
+
+.codrops-top a {
+  font-size: 0.69em;
+  padding: 0 0.25em;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.codrops-icon:before {
+  margin: 0 4px;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'codropsicons';
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+  content: "\e001";
+}
+
+.codrops-icon-prev:before {
+  content: "\e004";
+}
+
+.codrops-icon-info:before {
+  content: "\e003";
+}
+
+.codrops-icon span {
+  display: none;
+  position: absolute;
+  font-size: 0.85em;
+  padding: 0.5em 0 0 0.25em;
+  font-weight: 700;
+}
+
+.codrops-icon:hover span {
+  display: block;
+  color: #6a7b7e;
+}
+
+/* Related demos */
+.related {
+  font-weight: 700;
+  text-align: center;
+  padding: 5em 0;
+  display: none;
+  background: #fff;
+  color: rgba(0,0,0,0.3);
+}
+
+.overview .related {
+  display: block;
+}
+
+.related > a {
+  border: 3px solid black;
+  border-color: initial;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 25px;
+}
+
+.related > a:hover,
+.related > a:focus {
+  color: rgba(0,0,0,0.5);
+}
+
+.related a img {
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.related a:hover img,
+.related a:active img {
+  opacity: 1;
+}
+
+.related a h3 {
+  margin: 0;
+  padding: 0.5em 0 0.3em;
+  max-width: 300px;
+  text-align: left;
+}
+
 html, 
 body, 
 div#tab_wrapper, 
@@ -18,7 +154,7 @@ section#last_step {
 /*QUESTION COUNTER*/
 div.counter {
 	width: 100%;
-	height: 75px;
+	height: 50px;
 	color: white;
 	background-color: rgba(0,0,0,0.5);
 	position: fixed;
@@ -27,7 +163,7 @@ div.counter {
 div.counter a.pull-left {
 	color: white;
 	text-decoration: none;
-	margin-top:25px;
+	margin-top:10px;
 	margin-left: 100px;
 	font-size:21px;
 	font-family: 'Hammersmith One', sans-serif;
@@ -40,9 +176,10 @@ div.counter h2.pull-right {
 
 /*MAIN SECTION BUTTON*/
 .main h1 {
-	margin: 2em 0 !important;
-	padding: 0 50px !important;
-	font-size: 3.5em !important;
+	margin: 5em 0 1em 0 !important;
+  padding: 0 30px !important;
+  font-size: 3.5em !important;
+}
 }
 .main h2 {
 	margin-bottom: 4%;
@@ -50,27 +187,39 @@ div.counter h2.pull-right {
 	color: white;
 	font-family: 'Raleway', sans-serif;
 }
-.main a.start,
-a.finish  {
-	margin-top: 5%;
+.main a.start  {
+	margin-top:15px;
 	background-color: rgba(59,63,69, 0.1);
 	border-radius: 40px;
 	border: 3px solid #232529;
-	color: rgba(0,0,0,0.4);
+	color: rgba(35,37,41,1.0);
 	padding: 0.6em 1.5em;
 	font-weight: 700;
 	font-size: 24px;
 	font-family: 'Raleway', sans-serif;
 	transition: all 0.3s ease-in-out;
 }
+#emailInput {
+  width: 100%;
+  height:60px;
+  margin-top: 15px;
+  margin-bottom:50px;
+  background-color: rgba(59,63,69, 0.1);
+  border-radius: 40px;
+  border: 3px solid #232529;
+  color: rgba(35,37,41,1.0);
+  padding: 0.5em 1.5em;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
 .main a.start:hover,
-a.finish:hover  {
+#emailInput:hover  {
 	background: #232529;
 	color: #fff;
 	text-decoration: none;
 }
-
-
 
 form {
 	margin-top: 3%;
@@ -79,10 +228,7 @@ form.fs-form-overview {
 	margin-top: 0;
 }
 
-
-
-
-
+  
 /* SITEWIDE BEST EDUCATIONAL QUOTES CAROUSEL*/
 #quotes {
 	position: absolute;
@@ -104,7 +250,7 @@ form.fs-form-overview {
 }
 #last_step h1 {
 	color: white;
-	margin: 10% 0 0;
+	margin: 7% 0 0;
 	font-size: 42px;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -112,9 +258,6 @@ form.fs-form-overview {
 #last_step .form-control{
 	height: 50px;
 	font-size: 20px
-}
-form.cta {
-	margin-top: 0;
 }
 .fa-arrow-right {
 	border: 5px solid white;
@@ -144,13 +287,23 @@ form.cta {
 #bootcamps h3 {
 	text-align: center;
 	margin-bottom: 5%;
+  height: 26px;
+  overflow: hidden;
 }
-#bootcamps p{
+#bootcamps p {
 	text-align: center;
+  overflow: hidden;
+  height: 80px;
 }
 #bootcamps button {
 	margin: 0 auto;
 	display: block;
+  border: 3px solid transparent;
+}
+#bootcamps button:hover {
+  background-color: #fff;
+  border:3px solid #000;
+  transition: 0.3s all ease-in-out;
 }
 
 /*AUTO COMPLETE FOR QUESTIONS*/
@@ -203,7 +356,7 @@ form.cta {
 		max-width: 500px;
 	}
 	.fs-fields > li .fs-radio-custom label {
-		padding-top: 55%;
+		padding-top: 25%;
 	}
 	.fs-form-overview .fs-fields > li .fs-radio-custom label {
 		padding-top: 100%;
@@ -211,17 +364,13 @@ form.cta {
 	#last_step h1 {
 		margin: 100px 0 0;
 	}
-	.finishDiv {
-		margin-top: 5%;
-	}
-	a.finish {
-		padding: 0.1em 1em;
-	}
-	#box1 {
+	#box0, 
+  #box1, 
+  #box2 {
 		margin-bottom: 5%;
 	}
 	div.counter a.pull-left {
-		margin: 1em 0 0 1em;
+		margin: 0.5em 0 0 1em;
 	}
 }
 
@@ -232,23 +381,6 @@ form.cta {
 }
 
 
-
-
-Skip to content
- This repository
-Explore
-Gist
-Blog
-Help
-chrisbrody chrisbrody
- 
-8  Watch 
-  Star 112
- Fork 24joaopereirawd/fakeLoader.js
- branch: master  fakeLoader.js/fakeLoader.css
-João Pereirajoaopereirawd on Dec 5, 2014 add some files
-1 contributor
-382 lines (322 sloc)  8.376 kb RawBlameHistory  
 /**********************
  *CSS Animations by:
  *http://codepen.io/vivinantony
@@ -631,5 +763,5 @@ João Pereirajoaopereirawd on Dec 5, 2014 add some files
         -webkit-transform: translateY(-20px);
       }
     }
-Status API Training Shop Blog About
-© 2015 GitHub, Inc. Terms Privacy Security Contact
+
+

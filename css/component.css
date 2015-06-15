@@ -269,7 +269,7 @@ button.fs-continue,
 }
 
 .fs-fields input:focus {
-	background-color: #3b3f45; /* Fixes chrome bug with placeholder */
+	background-color: #808388; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input:focus {
@@ -297,7 +297,7 @@ button.fs-continue,
 	margin-right: 3%;
 	padding: 10px;
 	max-width: 200px;
-	width: 30%;
+	width: 16%;
 	text-align: center;
 	font-weight: 700;
 	font-size: 50%;
@@ -343,7 +343,7 @@ button.fs-continue,
 	transform: translate(-50%,-50%);
 }
 
-.fs-fields .fs-radio-custom label.radio-mobile::after {
+/*.fs-fields .fs-radio-custom label.radio-mobile::after {
 	background-image: url(../img/mobile.svg);
 }
 
@@ -353,6 +353,134 @@ button.fs-continue,
 
 .fs-fields .fs-radio-custom label.radio-conversion::after {
 	background-image: url(../img/conversion.svg);
+}*/
+
+/*QUESTION 2 ICONS*/
+.fs-fields .fs-radio-custom label.radio-front::after {
+	background-image: url(../img/frontend.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-fullStack::after {
+	background-image: url(../img/fullstack.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-data::after {
+	background-image: url(../img/data.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-ui::after {
+	background-image: url(../img/ui.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-app::after {
+	background-image: url(../img/app.svg);
+	width:75px;
+	height: 75px;
+}
+
+/*QUESTION 3 ICONS*/
+.fs-fields .fs-radio-custom label.radio-part::after {
+	background-image: url(../img/stopwatch.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-full::after {
+	background-image: url(../img/timer20.svg);
+	width:75px;
+	height: 75px;
+}
+
+/*QUESTION 4 ICONS*/
+.fs-fields .fs-radio-custom label.radio-online::after {
+	background-image: url(../img/online.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-inPerson::after {
+	background-image: url(../img/inPerson.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-hybrid::after {
+	background-image: url(../img/hybrid.svg);
+	width:75px;
+	height: 75px;
+}
+
+/*QUESTION 5 ICONS*/
+.fs-fields .fs-radio-custom label.radio-small::after {
+	background-image: url(../img/small.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-medium::after {
+	background-image: url(../img/medium.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-large::after {
+	background-image: url(../img/large.svg);
+	width:75px;
+	height: 75px;
+}
+
+/*QUESTION 6 ICONS*/
+.fs-fields .fs-radio-custom label.radio-beginner::after {
+	background-image: url(../img/beginner.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-intermediate::after {
+	background-image: url(../img/intermediate.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-advanced::after {
+	background-image: url(../img/advanced.svg);
+	width:75px;
+	height: 75px;
+}
+
+/*QUESTION 7 ICONS*/
+.fs-fields .fs-radio-custom label.radio-male::after {
+	background-image: url(../img/male.svg);
+	width:75px;
+	height: 75px;
+}
+.fs-fields .fs-radio-custom label.radio-female::after {
+	background-image: url(../img/female.svg);
+	width:75px;
+	height: 75px;
+}
+
+/*OVERVIEW HEIGHT & WIDTH ADJUSTMENTS*/
+.fs-form-overview label.radio-front::after,
+.fs-form-overview label.radio-fullStack::after,
+.fs-form-overview label.radio-data::after,
+.fs-form-overview label.radio-ui::after,
+.fs-form-overview label.radio-app::after,
+.fs-form-overview label.radio-part::after,
+.fs-form-overview label.radio-full::after,
+.fs-form-overview label.radio-online::after,
+.fs-form-overview label.radio-inPerson::after,
+.fs-form-overview label.radio-hybrid::after,
+.fs-form-overview label.radio-small::after,
+.fs-form-overview label.radio-medium::after,
+.fs-form-overview label.radio-large::after,
+.fs-form-overview label.radio-beginner::after,
+.fs-form-overviewlabel.radio-intermediate::after,
+.fs-form-overview label.radio-advanced::after,
+.fs-form-overview label.radio-male::after,
+.fs-form-overview label.radio-female::after {
+	width:50px !important;
+	height:50px !important;
+}
+.fs-form-overview .fs-radio-custom label::after {
+	top: 35%;
 }
 
 .fs-fields .fs-radio-custom label:hover::after,

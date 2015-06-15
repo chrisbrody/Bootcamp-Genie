@@ -29,7 +29,9 @@
         })();
       </script>
       <script src="js/spin.min.js"></script>
-      
+      <script src="js/vendor/jquery.bxslider.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
       <script src="js/main.js"></script>
     </body>
 </html>
